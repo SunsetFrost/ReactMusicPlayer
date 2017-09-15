@@ -6,7 +6,7 @@ let Header=React.createClass({
         return(
             <div className="components-header row">
                 <img src="/static/images/logo.png" width="40" alt="" className="-col-auto"/>
-                <h1 className="caption">music player</h1>
+                <h1 className="caption">Music Player</h1>
             </div>
 
         );
