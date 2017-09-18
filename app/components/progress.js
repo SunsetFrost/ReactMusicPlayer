@@ -14,8 +14,13 @@ let Progress=React.createClass({
     },
     render(){
         return(
-            <div className="components-progress" ref="progressBar" onClick={this.changeProgress}>
-                <div className="progress" style={{width: `${this.props.progress}%` , background: this.props.barColor}}></div>
+            <div>
+                <div className="components-progress" ref="progressBar" onClick={this.changeProgress}>
+                    <div className="progress" style={{width: `${this.props.progress}%` , background: this.props.barColor}}></div>
+                </div>
+                <p>
+                    已播放: {this.props.progress}s
+                </p>
             </div>
         );
     }

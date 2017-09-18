@@ -23,6 +23,17 @@ let Player = React.createClass({
     progressChangeHandler(progress) {
         $('#player').jPlayer('play', duration * progress);
     },
+    play() {
+        if(this.state.isPlay) {
+            $('#player').jPlayer('pause');
+        }else{
+            $('#player').jPlayer('play');
+        }
+
+        this.setState({
+            
+        })
+    },
     render(){
         return(
             <div className="player-page">
