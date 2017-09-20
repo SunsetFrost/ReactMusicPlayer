@@ -1,5 +1,4 @@
 import React from 'react';
-import { MUSIC_LIST } from '../static/config';
 import ListItem from '../components/listitem';
 
 let List = React.createClass({
@@ -9,6 +8,7 @@ let List = React.createClass({
     			<ListItem
     				key={item.id}
     				data={item}
+					focus = {this.props.currentMusicItem === item}
     			></ListItem>
     		);
     	});

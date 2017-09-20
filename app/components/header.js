@@ -8,7 +8,6 @@ let Header=React.createClass({
                 <img src="/static/images/logo.png" width="40" alt="" className="-col-auto"/>
                 <h1 className="caption">Music Player</h1>
             </div>
-
         );
     }
 });
